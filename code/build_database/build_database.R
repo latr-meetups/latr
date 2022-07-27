@@ -8,7 +8,7 @@ library(tidyverse)
 
 
 # root folder
-rootfolder <- "C:\\Users\\Prasanna\\Documents\\data\\FORCe\\inputDatabase"
+rootfolder <- "C:\\Users\\Owner\\Documents\\data\\FORCe\\inputDatabase\\ForceMaster_LTUSymptomatics\\3.1c. BB_Processed"
 
 # find all the C3D files in the root folder, including subdirectories
 fileslist <- list.files(rootfolder, pattern=".c3d", recursive=TRUE, full.names=TRUE)
@@ -18,7 +18,7 @@ fileslist <- list.files(rootfolder, pattern=".c3d", recursive=TRUE, full.names=T
 filenames <- fileslist %>% basename()
 
 # root folder for the new database, create if it doesn't exist
-rootfolder <- "C:\\Users\\Owner\\Documents\\data\\FORCe\\outputDatabase"
+rootfolder <- "C:\\Users\\Owner\\Documents\\data\\FORCe\\zz_latr_outputdatabase"
 if (!dir.exists(rootfolder)) {
   dir.create(rootfolder)
 }
