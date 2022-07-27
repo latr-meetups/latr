@@ -6,7 +6,7 @@
 library(tidyverse)
 
 # location of data file (note: need to use double back slashes)
-csvfile <- "C:\\Users\\Owner\\Documents\\projects\\latr\\code\\basic_descriptives\\data\\impulse_data.csv"
+csvfile <- "C:\\Users\\Owner\\Documents\\projects\\latr\\code\\basic_descriptives\\data\\joint_angular_impulse_data.csv"
 
 # load the file into a data frame
 data <- read_csv(csvfile)
